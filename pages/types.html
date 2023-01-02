@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Javascript Info Summaries and Tasks: Hello World</title>
+    <title>Javascript Info Summaries and Tasks: Types</title>
 </head>
 <body>
-    <header class="display text-center">Javascript Info Summaries and Tasks: Hello World</header>
+    <header class="display text-center">Javascript Info Summaries and Tasks: Types</header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Naviagtion</a>
@@ -24,10 +24,10 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Hello World</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/variables.html">Variables</a>
+                <a class="nav-link" href="./variables.html">Variables</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/variables.html">Types</a>
+                <a class="nav-link" href="./types.html">Types</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -42,21 +42,44 @@
             <div class = "row">
                 <div class="col-md-6">
                     <h2 class="header">Summary</h2>
+                    <pre>There are 8 basic data types in JavaScript</pre>
                     <ul class="list-group">
-                        <li class="list-group-item">We can use a script tag to add javascript code to a page</li>
-                        <li class="list-group-item">The type and language attributes are not required</li>
-                        <li class="list-group-item">A script in an external file can be inserted with script src = path/to/script.js script</li>
-                 
+                      <li class="list-group-item">Seven primitive data types:</li>
+                      <ul class="list-group">
+                        <li class="list-group-item">number for numbers of any kind: integer or floating-point, integers are limited by &plusmn;(2^53 - 1). </li>
+                        <li class="list-group-item">bigint for integer numbers of arbitary length</li>
+                        <li class="list-group-item">string for strings. A string may have zero or more characters, there's no separate single-character type.</li>
+                        <li class="list-group-item">boolean for true/false</li>
+                        <li class="list-group-item">null for unknown values - a standalone type that has a single value null.</li>
+                        <li class="list-group-item">undefined for unassigned values - a standalone type that has a single value undefined</li>
+                        <li class="list-group-item">symbol for unique identifiers</li>
+                      </ul>
+                      <ul class="list-group">
+                        <li class="list-group-item">And one non primitive data type</li>
+                        <ul class="list-group">
+                          <li class="list-group-items">object for more complex data structures</li>
+                        </ul>
+                      </ul>
+  
+                    </ul>
+                    <pre>
+                      The typeof operator allows us to see which type is stored in a variable
+                    </pre>
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        Usually used as <code>typeof x</code> but <code>typeof(x)</code> is also possible.
+                      </li>
+                      <li class="list-group-item">
+                        Returns a string with the name of the type, like "string".
+                      </li>
+                      <li class="list-group-item">
+                        For <code>null</code> returns <code>"object"</code>- this is an error in the language <code>null</code> is not an object.
+                      </li>
+                    
+
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <h2 class="header">Tasks</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item" id="task1">Task 1: <button class="btn" onclick="task1()">Click</button></li>
-                        <li class="list-group-item" id="task2">Task 2: <button class="btn" onclick="task2()">Click</button></li>
-                     
-                    </ul>
-                </div>
+        
             </div>
         </div>
 
@@ -74,13 +97,3 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function task1(){
-            alert("I'm Javascript!");
-        }
-    </script>
-    <script src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-</html>

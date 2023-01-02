@@ -5,7 +5,7 @@ main {
 }
 
 header {
-  font-size: 8vh;
+  font-size: 2rem;
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(-360deg, rgba(188, 47, 47, 0.721), #000);
   -webkit-background-clip: text;
