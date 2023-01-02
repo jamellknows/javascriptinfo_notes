@@ -4,3 +4,10 @@ function task1(){
     admin = name 
     alert(admin)
 }
+
+function task2(){
+    const PLANET = "Earth"
+    let visitor = prompt("What is your name visitor?")
+}
+
+

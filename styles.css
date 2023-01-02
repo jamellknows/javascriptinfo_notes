@@ -1,14 +1,42 @@
 main {
   margin-top: 2rem;
+  background: linear-gradient(-360deg, rgb(210, 23, 56), rgb(248, 248, 248));
+  height: 80vh;
 }
 
 header {
-  font-size: 5vh;
-  color: linear-gradient(#fff #000);
+  font-size: 8vh;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(-360deg, rgba(188, 47, 47, 0.721), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 button {
   border-color: red;
+}
+
+.footer-message {
+  font-size: 3vh;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(-360deg, rgba(188, 47, 47, 0.721), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.link {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  margin: 5px 2rem 2rem 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

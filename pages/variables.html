@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <title>Javascript Info Summaries and Tasks: Variables</title>
 </head>
@@ -40,7 +41,7 @@
                     <h2 class="header">Summary</h2>
                     <h3>We can declare variables to store data by using var, let or const keywords</h3>
                     <ul class="list-group">
-                        <li class="list-group-item">let - is a modern varriable declaration</li>
+                        <li class="list-group-item">let - is a modern variable declaration</li>
                         <li class="list-group-item">var - is an old school variable declaration. Normallly we don;t use it at all, but we'll cover subtle differences from let later</li>
                         <li class="list-group-item">const - is like let, but the value of the variable can't be changed</li>
                         <li class="list-group-item">Variables should be named ina way that it is easy to understand what they are</li>
@@ -52,14 +53,25 @@
                     <ul class="list-group">
                         <li class="list-group-item" id="task1">Task 1: <button class="btn" onclick="task1()">Click</button></li>
                         <li class="list-group-item" id="task2">Task 2: <button class="btn" onclick="task2()">Click</button></li>
-                        <li class="list-group-item" id="task2">Task 3: <button class="btn" onclick="task2()">Click</button></li>
-
                     </ul>
                 </div>
             </div>
         </div>
 
     </main>
+    <footer>
+      <div class="container-fluid">
+          <div class='row'>
+              <div class="col-fluid text-center">
+                  <p class="footer-message">A study page of jamellknows</p>
+              </div>
+              <div class="col-fluid footer-links">
+                  <a  href="https://www.github.com/jamellknows" target="_blank" class="link"><i class="fa-brands fa-github"></i>Github</a>
+                  <a  href="https://jamellknows.github.io" target="_blank" class="link"><i class="fa-brands fa-github-alt"></i>Github Pages</a>
+              </div>
+          </div>
+      </div>
+  </footer>
     <script>
         function task1(){
             alert("I'm Javascript!");
